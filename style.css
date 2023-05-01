@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;   
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,79,121,1) 46%, rgba(0,212,255,1) 100%);
+}
+.accordion-wrapper{
+    padding: 10px;
+    width: 60%;
+}
+.accordion{
+    position: relative;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    box-shadow: -1px 3px 46px 6px rgba(255,255,255,0.75) inset;
+    -webkit-box-shadow: -1px 3px 46px 6px rgba(255,255,255,0.75) inset;
+    -moz-box-shadow: -1px 3px 46px 6px rgba(255,255,255,0.75) inset;
+}
+h1{
+    font-family: cursive;
+    text-align: center;
+}
+.content {
+    height: 0;
+    overflow: hidden;
+}
+.content p{
+    padding: 10px;
+}
+.line{
+    background-color: #eaee139d;
+    height: 3px;
+}
+.button-flex{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    
+}
+.cross{
+    font-size: 30px;
+    font-weight: bolder;
+    position: absolute;
+    background-color: transparent;
+    border: none;
+    top: 0px;
+    right: 4px;
+    height: 40px;
+}
+.cross:hover{
+    cursor: pointer;
+}
+.full{
+    height: 100%;
+}
+.hide{
+    display: none;
+}
+
+@media only screen and (max-width: 730px){
+    .accordion-wrapper{
+        width: 90%;
+    }
+}
+
+
+@media only screen and (max-width: 400px){
+    h1{
+        font-size: 25px;
+    }
+}
